@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @trainer_knowledge.title %>
+</p>
+
+<p>
+  <strong>Script:</strong>
+  <%= @trainer_knowledge.script %>
+</p>
+
+<%= link_to 'Edit', edit_trainer_knowledge_path(@trainer_knowledge) %> |
+<%= link_to 'Back', trainer_knowledges_path %>

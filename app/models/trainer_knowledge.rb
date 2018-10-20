@@ -1,0 +1,2 @@
+class TrainerKnowledge < ApplicationRecord
+end

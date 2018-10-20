@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Trainer Knowledges</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Script</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trainer_knowledges.each do |trainer_knowledge| %>
+      <tr>
+        <td><%= trainer_knowledge.title %></td>
+        <td><%= trainer_knowledge.script %></td>
+        <td><%= link_to 'Show', trainer_knowledge %></td>
+        <td><%= link_to 'Edit', edit_trainer_knowledge_path(trainer_knowledge) %></td>
+        <td><%= link_to 'Destroy', trainer_knowledge, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Trainer Knowledge', new_trainer_knowledge_path %>
